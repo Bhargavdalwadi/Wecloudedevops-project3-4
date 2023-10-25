@@ -1,0 +1,20 @@
+version: '3'
+services:
+  todoapp:
+    container_name: todoapp
+    restart: always
+    build: ./
+    volumes:
+      - ./:/var/www/todoapp
+    links:
+      - mongo
+    ports:
+      - 3000:3000
+    environment:
+      - PORT=3000
+  
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"

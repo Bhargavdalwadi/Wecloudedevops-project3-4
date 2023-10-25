@@ -1,0 +1,15 @@
+It's a todo application where you can list the things you need to do. 
+To achieve this, we will create a Docker compose file to set up two containers—one for the application and the other for the database
+We have two containers:
+
+Application: Running on port 3000.
+MongoDB: Running on port 27017."
+
+How to Run the Application:
+
+1- Get your public IP for EC2.
+2- Access the application using the following URL format: http://[server IP]:3000.
+	Replace [server IP] with your actual public IP address. For example: http://123.45.67.89:3000
+
+To list all continer runnning 
+1- docker ps
